@@ -1,0 +1,38 @@
+@media (max-width:612px) {
+  #storys, #container{
+    width: 100%;
+  }
+  #container{
+    grid-template-columns: 100%;
+  }
+  body {
+    grid-template-columns: 100%;
+    margin: 0px;
+  }
+  #menuDesktop{
+    display: none;
+  }
+  #menuMobile{
+    display: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    padding: 0px 20px;
+  }
+  #menuMobile div{
+    height: 29px;
+  }
+  #menuMobile ion-icon{
+    font-size: 22px;
+  }  
+  #menuMobile a > img{
+    width: 90px;
+    height: 29px;
+  }
+ 
+  aside {
+    display: none;
+  }
+
+}

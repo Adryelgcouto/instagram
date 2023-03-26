@@ -192,7 +192,7 @@ div::-webkit-scrollbar {
   background-color: black;
   position: absolute;
   right: 0;
-  z-index: 4;
+  z-index: 1;
 }
 
 #post {
@@ -219,9 +219,9 @@ div::-webkit-scrollbar {
   height: 61px;
 }
 
-.posts img {
-  width: 614px;
-  height: 614px;
+.imgPosts{
+  width: 612px;
+  height: 612px;
 }
 
 .nameP {
@@ -369,7 +369,5 @@ aside {
 }
 #links p:nth-child(1){
   margin-bottom: 18px;
-}
-footer {
-  display: none;
+  
 }

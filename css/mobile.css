@@ -1,15 +1,38 @@
-@media (max-width:612px) {
-  #storys, #container{
-    width: 100%;
+@media (max-width: 935px){
+  aside{
+    display: none;
   }
   #container{
+    display: flex;
+    justify-content: center;
+
+  }
+  #content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #storys{
+    width: 614px;
+  }
+}
+footer {
+  display: none;
+}
+@media (max-width:612px) {
+  #storys, #container, .posts,.imgPosts,#post {
+    width: 100%;
+  }
+
+  #container{
     grid-template-columns: 100%;
+    display: block;
   }
   body {
     grid-template-columns: 100%;
     margin: 0px;
   }
-  #menuDesktop{
+  #menuDesktop, .arrow{
     display: none;
   }
   #menuMobile{
@@ -34,5 +57,6 @@
   aside {
     display: none;
   }
+
 
 }

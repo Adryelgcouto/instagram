@@ -192,6 +192,7 @@ div::-webkit-scrollbar {
   background-color: black;
   position: absolute;
   right: 0;
+  z-index: 4;
 }
 
 #post {
@@ -298,12 +299,12 @@ aside {
 
 }
 
-#profile div p:nth-child(1) {
+#profile div a:nth-child(1) p {
   font-weight: 500;
   color: #262626;
 }
 
-#profile div p:nth-child(2) {
+#profile div a:nth-child(2) p {
   font-weight: 300;
   color: #8E8E8E;
 }
@@ -326,7 +327,7 @@ aside {
 #textSugges .grey > p {
   color: #262626 ;
 }
-#follow > .follows > div:nth-child(1) > img{
+#follow > .follows > div:nth-child(1)  img{
   width: 32px;
   height: 32px;
   border-radius: 28px;
@@ -358,6 +359,16 @@ aside {
   color: #139EF2;
   font-size: 12px;
   font-weight: 500;
+}
+#links {
+  margin-top: 33px;
+  font-size: 11px;
+  color: #C7C7C7;
+  font-weight: 300;
+  
+}
+#links p:nth-child(1){
+  margin-bottom: 18px;
 }
 footer {
   display: none;

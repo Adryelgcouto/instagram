@@ -1,41 +1,46 @@
-@media (max-width: 935px){
-  aside{
+@media (max-width: 935px) {
+  aside {
     display: none;
   }
-  #container{
+  footer {
+    display: none;
+  }
+  #container {
     display: flex;
     justify-content: center;
-
   }
-  #content{
+  #content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #storys{
+  #storys {
     width: 614px;
   }
 }
-footer {
-  display: none;
-}
-@media (max-width:612px) {
-  #storys, #container, .posts,.imgPosts,#post {
+@media (max-width: 612px) {
+  #storys,
+  #container {
     width: 100%;
   }
-
-  #container{
+  #container {
+    display: grid;
     grid-template-columns: 100%;
+  }
+  #content{
     display: block;
+  }
+  #arrow{
+    display: none;
   }
   body {
     grid-template-columns: 100%;
     margin: 0px;
   }
-  #menuDesktop, .arrow{
+  #menuDesktop {
     display: none;
   }
-  #menuMobile{
+  #menuMobile {
     display: inherit;
     display: flex;
     justify-content: space-between;
@@ -43,20 +48,52 @@ footer {
     height: 54px;
     padding: 0px 20px;
   }
-  #menuMobile div{
+  #menuMobile div {
     height: 29px;
   }
-  #menuMobile ion-icon{
+  #menuMobile ion-icon {
     font-size: 22px;
-  }  
-  #menuMobile a > img{
+  }
+  #menuMobile a > img {
     width: 90px;
     height: 29px;
   }
- 
+  .posts {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .interaction {
+    height: auto;
+  }
+
   aside {
     display: none;
   }
-
-
+  body {
+    position: relative;
+  }
+  main {
+    margin-bottom: 54px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    bottom: 0;
+  }
+  footer div {
+    margin: 0px 17px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer > div > a > ion-icon {
+    font-size: 22px;
+  }
 }
